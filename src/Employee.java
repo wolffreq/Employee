@@ -48,18 +48,18 @@ public class Employee {
 
 	protected void errorDetection() {
 
-		while ((id.length() != 6) && (id.indexOf('E') != 0)) {
+		if((id.length() <= 6) && ("E".equals(id.substring(0)))) {
 			System.out.println("Invalid entery! \nThe id should start with a captial E"
 					+ " and be no longer than 6 characters long");
 			id = null;
 		}
-		while ((annualSalary < 20000) || (annualSalary > 60000)) {
+		if ((annualSalary < 20000) || (annualSalary > 60000)) {
 			annualSalary = 0;
 			System.out.println("Invalid entery! \n"
 					+ "The annual Salary must be no less then 20,000 and no greater then 60,000");
 			
 		}
-		while ((grade < 1) || (grade > 5)) {
+		if ((grade < 1) || (grade > 5)) {
 			grade = 0;
 			System.out.println("Invalid entery! \nThe grade must be between 1 and 5 ");
 		}
