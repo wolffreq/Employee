@@ -66,7 +66,7 @@ public class Employee {
 	}
 
 	protected void updateSalary(float percent) {
-		annualSalary = annualSalary * percent;
+		annualSalary += annualSalary * percent;
 		grade++;
 	}
 

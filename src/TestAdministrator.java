@@ -8,7 +8,7 @@ public class TestAdministrator {
 		m.errorDetection();
 		e.display();
 		m.display();
-		m.updateSalary(12);
+		m.updateSalary((float) 0.12);
 		m.display();
 		m.option();
 		
