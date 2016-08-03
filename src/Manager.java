@@ -10,10 +10,6 @@ class Manager extends Employee {
 	public Manager(String id, String name, float annualSalary, int grade, String managerTitle, int noOfStaff,
 			String bonusScheme) {
 		super(id, name, annualSalary, grade);
-		this.id = id;
-		this.name = name;
-		this.annualSalary = annualSalary;
-		this.grade = grade;
 		this.managerTitle = managerTitle;
 		this.noOfStaff = noOfStaff;
 		this.bonusScheme = bonusScheme;
@@ -51,7 +47,7 @@ class Manager extends Employee {
 		this.rate = rate;
 	}
 
-	protected void errorDetectionManager() {
+	protected void errorDetection() {
 		
 		if (bonusScheme.matches("yes")) {
 			rate = 5;
